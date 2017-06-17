@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/slide_selector" >
+
+    <ImageView
+        android:id="@+id/list_row_icon"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_slide_activity" />
+
+    <TextView
+        android:id="@+id/list_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/list_row_icon"
+        android:gravity="center_vertical"
+        android:paddingRight="40dp"
+        android:singleLine="true"
+        android:text="HI"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/list_row_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

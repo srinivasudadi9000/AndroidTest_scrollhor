@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+    <ImageView
+        android:id="@+id/iv_slidemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:clickable="true"
+        android:contentDescription="@null"
+
+        android:src="@drawable/ic_slide_navigation_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Test"
+        android:textSize="@dimen/maxtextsize"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/iv_dashboard_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.5"
+        android:contentDescription="@null"
+        android:src="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/iv_dashboard_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.5"
+        android:contentDescription="@null"
+        android:src="@drawable/threedotsv" />
+
+
+
+</LinearLayout>

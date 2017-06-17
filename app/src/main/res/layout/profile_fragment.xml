@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/profimgcnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="46 POSTS"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/maxtextsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_listgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_listview"
+            android:padding="5dp"
+            android:src="@drawable/listimage" />
+
+        <ImageView
+            android:id="@+id/iv_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/listview" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>
